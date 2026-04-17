@@ -6,23 +6,24 @@ body {
   box-sizing: border-box;
   background-color: #ebf0f5;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
 #wrapper {
   padding: 0.3em 0.4em;
 }
+.navbar-collapse:checked {
+  display: none;
+}
 .navbar {
+  width: 100%;
+  height: 100%;
   position: relative;
+  display: inline-flex;
   background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
   border: none;
 }
 .navbar-brand {
-  font-weight: bold;
-  padding-left: 1.8rem;
-  padding-right: 1.5rem;
-  background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
-}
-.navbar-collapse:checked {
-  display: none;
+  display: flex;
 }
 .navbar-toggler {
   display: none;
@@ -32,11 +33,13 @@ a {
   color: beige;
 }
 .menu {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   width: auto;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: 0;
 }
 .menu button {
   border: 1px solid azure;
@@ -49,7 +52,9 @@ a {
   line-height: 1.5rem;
   margin-right: 10px;
   font-size: 18px;
+  flex-shrink: 0;
 }
+
 .logo {
   font-size: 1.5rem;
   text-align: center;
@@ -146,5 +151,5 @@ img {
 }
 .contact {
   flex: 1;
-  font-size: 0.85rem;
+  font-size: 1.5rem;
 }

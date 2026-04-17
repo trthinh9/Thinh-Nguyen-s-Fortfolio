@@ -1,4 +1,4 @@
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 1300px) {
   body {
     width: 100%;
     height: 100%;
@@ -7,6 +7,7 @@
     box-sizing: border-box;
     background-color: #ebf0f5;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
   }
   a {
     text-decoration: none;
@@ -15,28 +16,26 @@
     padding: 0.3em 0.4em;
   }
   .navbar {
+    width: 100%;
+    height: 100%;
     position: relative;
+    display: inline-block;
     background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
     border: none;
-  }
-  .navbar-brand,
-  .navbar .nav-link {
-    color: White;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1rem;
   }
   .navbar-brand {
     font-weight: bold;
     padding-left: 1.8rem;
     padding-right: 1.5rem;
-    background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
   }
-  .navbar .nav-link:hover {
-    color: LightGray;
+  .nav-link {
+    color: White;
+    text-decoration: none;
+    display: inline-block;
+    padding: center;
   }
-  .navbar .nav-link {
-    display: block;
+  a {
+    text-decoration: none;
   }
   .navbar-collapse {
     display: none;
@@ -59,7 +58,7 @@
   .menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
   .menu a {
     color: white;
@@ -169,7 +168,7 @@
   }
   .contact {
     flex: 1;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
   }
   .BL,
   .CX {
