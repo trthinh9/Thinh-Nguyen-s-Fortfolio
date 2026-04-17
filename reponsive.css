@@ -1,0 +1,266 @@
+@media screen and (max-width: 842px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    box-sizing: border-box;
+    background-color: #ebf0f5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  #wrapper {
+    padding: 0.3em 0.4em;
+  }
+  .navbar {
+    position: relative;
+    background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
+    border: none;
+  }
+  .navbar-brand,
+  .navbar .nav-link {
+    color: White;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    padding-left: 1.8rem;
+    padding-right: 1.5rem;
+    background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
+  }
+  .navbar .nav-link:hover {
+    color: LightGray;
+  }
+  .navbar .nav-link {
+    display: block;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse:checked + .navbar {
+    height: 5rem;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #8f52ad, #12c2e9);
+  }
+  .navbar-toggler {
+    font-size: 24pt;
+    color: black;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .menu a {
+    color: white;
+  }
+  .menu button {
+    border: solid azure;
+    background-color: #0f4e85;
+    text-align: center;
+    display: block;
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  h2 {
+    background-color: #cc0000;
+    color: aliceblue;
+    margin: 1em 0 0.3em 0;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 0.3em 0 0.3em;
+    margin-top: 0.5rem;
+  }
+  .ctr {
+    display: block;
+    position: relative;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 1.2em;
+  }
+  .ctr li {
+    border: 1px solid azure;
+    border-radius: 2em;
+    background-color: #da6416;
+    font-size: 1em;
+    color: beige;
+    text-align: center;
+    display: block;
+    height: fit-content;
+    margin: 0;
+    padding: 0 0.4em;
+  }
+  .sym {
+    width: 1em;
+    height: 1em;
+  }
+  .select {
+    margin: 0.3em 0 0.3em;
+    border-top-left-radius: 1.4em;
+    background-color: beige;
+  }
+  .select span {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-align: start;
+  }
+  .select1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .select li {
+    border: 1px solid azure;
+    border-radius: 1.2em;
+    background-color: #0f4e85;
+    color: beige;
+    text-align: left;
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 1.4em;
+    margin: 0 0.5em 0 0.5em;
+    padding-left: 0.6em;
+  }
+  img {
+    border-radius: 1rem;
+  }
+  .vehicle {
+    margin: 0.4rem;
+    padding: 0.3rem;
+    display: block;
+    position: relative;
+    border: 1.5rem solid none;
+    background-color: #acccfc;
+    border-radius: 1.2em;
+  }
+  .TX {
+    font-size: 0.9rem;
+    text-align: left;
+    left: 0.6em;
+    border: 0.6em solid #acccfc;
+    background-color: beige;
+    border-radius: 1.5em;
+  }
+  .TX ol {
+    padding: 0 0.6em;
+  }
+  .TX p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .chitiet {
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+  }
+  .contact {
+    flex: 1;
+    font-size: 0.85rem;
+  }
+  .BL,
+  .CX {
+    margin-bottom: 0.4em;
+  }
+  .login {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  .loginside form {
+    font-size: 1em;
+    padding-left: 2.4em;
+  }
+  .loginside {
+    text-align: left;
+    height: 12.5em;
+    font-size: 1.3em;
+    border: 0.3em solid #acccfc;
+    background-color: beige;
+    border-radius: 1em;
+  }
+  .LGbutton,
+  .dky {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    border-radius: 2em;
+    color: white;
+    border: 1px solid azure;
+    background-color: #0f4e85;
+    height: 2em;
+    width: 6em;
+  }
+  .dky {
+    margin-left: 3.7em;
+  }
+  .dky a {
+    color: white;
+  }
+  .signin {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  .signside form {
+    padding-left: 1.5em;
+  }
+  .signside {
+    display: inline-block;
+    text-align: left;
+    width: 13em;
+    height: 22em;
+    font-size: 1.2em;
+    border: 0.3em solid #acccfc;
+    background-color: beige;
+    border-radius: 20px;
+  }
+  .dky1 a {
+    color: white;
+  }
+  .dky1 {
+    margin-left: 1.5em;
+    margin-top: 0.4em;
+    font-size: 0.82em;
+    width: 5.5em;
+    text-align: center;
+    border-radius: 1em;
+    color: white;
+    border: solid azure;
+    background-color: #0f4e85;
+    height: 1.9em;
+  }
+  .cpsignin {
+    display: inline-block;
+    text-align: left;
+    width: 15.2em;
+    height: 15em;
+    font-size: 1.2em;
+    border: 0.3em solid #acccfc;
+    background-color: beige;
+    border-radius: 20px;
+  }
+  .cpsignside form {
+    padding-left: 2.5em;
+  }
+  .cpsignside {
+    display: block;
+    position: relative;
+  }
+}
