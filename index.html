@@ -1,392 +1,103 @@
-<!doctype html>
-<html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thịnh Nguyễn</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="reponsive.css" />
-  </head>
-  <body>
-    <input
-      id="navbar-indicator"
-      class="navbar-collapse"
-      type="checkbox"
-      checked
-    />
-    <nav class="navbar">
-      <h1><a class="navbar-brand" href="index.html">Thịnh Nguyễn's Home</a></h1>
-      <div class="menu">
-        <button>
-          <a class="navbar-link" href="KM.html"> Giới thiệu </a>
-        </button>
-        <button>
-          <a class="navbar-link" href="DS.html"> Logistics </a>
-        </button>
-        <button>
-          <a class="navbar-link" href="TX.html"> DV du lịch </a>
-        </button>
-        <button>
-          <a class="navbar-link" href="TH.html"> Thiết kế </a>
-        </button>
-        <button>
-          <a class="navbar-link" href="GY.html"> Đặt lịch </a>
-        </button>
-        <button>
-          <a class="navbar-link" href="Login.html"> Góp ý </a>
-        </button>
-      </div>
-      <label class="navbar-toggler" for="navbar-indicator"> + </label>
-    </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinh Nguyen - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header>
+        <nav>
+            <div class="logo">Thinh Nguyen</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <article id="wrapper">
-      <article>
-        <h2>Khuyến mãi</h2>
-      </article>
-      <article class="ctr">
-        <li>
-          <a>
-            Mở điểm giao nhận PUDO - ViettelPost
-            <svg
-              class="sym"
-              viewbox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="yellow"
-            >
-              <style>
-                @keyframes notify {
-                  0%,
-                  to {
-                    transform: rotate(0deg);
-                    transform-origin: top center;
-                  }
-                  10%,
-                  90% {
-                    transform: rotate(2deg);
-                  }
-                  20%,
-                  40%,
-                  60% {
-                    transform: rotate(-6deg);
-                  }
-                  30%,
-                  50%,
-                  70% {
-                    transform: rotate(6deg);
-                  }
-                  80% {
-                    transform: rotate(-2deg);
-                  }
-                }
-              </style>
-              <g
-                style="
-                  animation: notify 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-                    both infinite;
-                "
-                stroke-width="1.5"
-              >
-                <path
-                  stroke="#0A0A30"
-                  d="M12.29 3.398a5 5 0 00-5 5v2c0 .758-.441 1.505-1.005 2.012a3 3 0 002.005 5.232h8a3 3 0 002.006-5.232c-.564-.507-1.005-1.254-1.005-2.012v-2a5 5 0 00-5-5z"
-                />
-                <path
-                  stroke="#265BFF"
-                  stroke-linecap="round"
-                  d="M14.68 20.312l-.042.01a9.713 9.713 0 01-4.67-.01"
-                />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a>
-            Vận tải Bắc - Nam giá siêu ưu đãi
-            <svg
-              class="sym"
-              viewbox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="yellow"
-            >
-              <style>
-                @keyframes notify {
-                  0%,
-                  to {
-                    transform: rotate(0deg);
-                    transform-origin: top center;
-                  }
-                  10%,
-                  90% {
-                    transform: rotate(2deg);
-                  }
-                  20%,
-                  40%,
-                  60% {
-                    transform: rotate(-6deg);
-                  }
-                  30%,
-                  50%,
-                  70% {
-                    transform: rotate(6deg);
-                  }
-                  80% {
-                    transform: rotate(-2deg);
-                  }
-                }
-              </style>
-              <g
-                style="
-                  animation: notify 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-                    both infinite;
-                "
-                stroke-width="1.5"
-              >
-                <path
-                  stroke="#0A0A30"
-                  d="M12.29 3.398a5 5 0 00-5 5v2c0 .758-.441 1.505-1.005 2.012a3 3 0 002.005 5.232h8a3 3 0 002.006-5.232c-.564-.507-1.005-1.254-1.005-2.012v-2a5 5 0 00-5-5z"
-                />
-                <path
-                  stroke="#265BFF"
-                  stroke-linecap="round"
-                  d="M14.68 20.312l-.042.01a9.713 9.713 0 01-4.67-.01"
-                />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a>
-            Gạo ST25 giảm giá sốc
-            <svg
-              class="sym"
-              viewbox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="yellow"
-            >
-              <style>
-                @keyframes notify {
-                  0%,
-                  to {
-                    transform: rotate(0deg);
-                    transform-origin: top center;
-                  }
-                  10%,
-                  90% {
-                    transform: rotate(2deg);
-                  }
-                  20%,
-                  40%,
-                  60% {
-                    transform: rotate(-6deg);
-                  }
-                  30%,
-                  50%,
-                  70% {
-                    transform: rotate(6deg);
-                  }
-                  80% {
-                    transform: rotate(-2deg);
-                  }
-                }
-              </style>
-              <g
-                style="
-                  animation: notify 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-                    both infinite;
-                "
-                stroke-width="1.5"
-              >
-                <path
-                  stroke="#0A0A30"
-                  d="M12.29 3.398a5 5 0 00-5 5v2c0 .758-.441 1.505-1.005 2.012a3 3 0 002.005 5.232h8a3 3 0 002.006-5.232c-.564-.507-1.005-1.254-1.005-2.012v-2a5 5 0 00-5-5z"
-                />
-                <path
-                  stroke="#265BFF"
-                  stroke-linecap="round"
-                  d="M14.68 20.312l-.042.01a9.713 9.713 0 01-4.67-.01"
-                />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </article>
-      <article>
-        <h2>Danh sách thuê xe hot</h2>
-      </article>
-      <article class="select">
-        <span>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/limo-green.jpg?raw=true"
-                alt="Vinfast Limo Green"
-              />
-            </a>
-            <li>Vinfast Limo Green</li>
-            <li>Giá thuê: 1.000.000vnđ/ngày</li>
-            <li>Số lượt thuê: 342</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/Accent%20den.jpg?raw=true"
-                alt="Huyndai Accent màu đen"
-              />
-            </a>
-            <li>Huyndai Accent màu đen</li>
-            <li>Giá thuê: 500.000vnđ/ngày</li>
-            <li>Số lượt thuê: 242</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/Vios%20trang.jpg?raw=true"
-                alt="Vios trắng"
-              />
-            </a>
-            <li>Toyota Vios màu trắng</li>
-            <li>Giá thuê: 500.000vnđ/ngày</li>
-            <li>Số lượt thuê: 142</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/Stargazer%20trang.jpg?raw=true"
-                alt="Stargazer màu trắng"
-              />
-            </a>
-            <li>Stargazer màu trắng</li>
-            <li>Giá thuê: 700.000vnđ/ngày</li>
-            <li>Số lượt thuê: 122</li>
-          </section>
-        </span>
-      </article>
-      <article>
-        <h2>Danh sách xe tải Bắc - Nam</h2>
-      </article>
-      <article class="select">
-        <span>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/8T.jpg?raw=true"
-                alt="Xe tải 8T"
-              />
-            </a>
-            <li>Xe tải 8T</li>
-            <li>Giá cước: Liên hệ</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/13T.jpg?raw=true"
-                alt="Xe tải 13T"
-              />
-            </a>
-            <li>Xe tải 13T</li>
-            <li>Giá thuê: Liên hệ</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/45HC.jpg?raw=true"
-                alt="Container 45ft HC"
-              />
-            </a>
-            <li>Container 45ft HC</li>
-            <li>Giá thuê: Liên hệ</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/45RF.jpg?raw=true"
-                alt="Container 45ft RC"
-              />
-            </a>
-            <li>Container 45ft RC</li>
-            <li>Giá thuê: Liên hệ</li>
-          </section>
-        </span>
-      </article>
-      <article>
-        <h2>Danh sách sản phẩm</h2>
-      </article>
-      <article class="select">
-        <span>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/ST25MeGao.jpg?raw=true"
-                alt="ST25 Mê Gạo túi 5kg"
-              />
-            </a>
-            <li>ST25 Mê Gạo túi 5kg</li>
-            <li>Giá bán: 190.000vnđ</li>
-            <li>Số lượng: 15 túi</li>
-          </section>
-          <section class="vehicle">
-            <a href="TX.html">
-              <image
-                width="250px"
-                height="150px"
-                object-fit="contain"
-                src="https://github.com/trthinh9/Thinh-Nguyen-s-Fortfolio/blob/main/Imagine/Ibero%20com.jpg?raw=true"
-                alt="ibiero HANOI AUTUMN"
-              />
-            </a>
-            <li>ibiero HANOI AUTUMN</li>
-            <li>Giá bán: 450.000vnđ</li>
-            <li>Số lượng: 50</li>
-          </section>
-        </span>
-      </article>
-      <footer id="bottom">
-        <h2>Thông tin liên hệ</h2>
-        <article class="chitiet">
-          <section class="contact">
-            SĐT - Zalo: 0378677765<br />
-            Email: trthinh9@gmail.com<br />
-            <a
-              href="https://www.facebook.com/thinh.nguyen.6182/"
-              style="color: black"
-              >Facebook: Thịnh Nguyễn</a
-            >
-          </section>
-          <section class="map">
-            <image
-              width="70px"
-              src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-            />
-          </section>
-        </article>
-      </footer>
-    </article>
-  </body>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Thinh Nguyen</h1>
+            <p>Web Developer | Designer | Logistics Expert</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Thinh Nguyen (trthinh), a non-professional web programmer and designer. I have expertise and knowledge in logistics and tourism services. I have previously held middle management and leader logistics projects.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Logistics</div>
+                <div class="skill">Driver</div>
+                <div class="skill">Tourism Services</div>
+                <div class="skill">Design Logo</div>
+                <div class="skill">Public speaking</div>
+                <div class="skill">Human Resources</div>
+                <div class="skill">Project Lead</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Developing the logistics market in Long Giang Industrial Park</h3>
+                    <p>
+                        - Participate in the development of the website sanvantai.viettelpost.vn <br>
+                        - Directly manage and develop the post office in Long Giang Industrial Park <br>
+                        - Directly seek and develop corporate customers in Long Giang Industrial Park <br>
+                        - Directly process and track orders from 54 companies in the industrial park <br>
+                        - Increase revenue from 250 million to 600 million VND (from 2024 to 2025)</p>
+                </div>
+                <div class="project">
+                    <h3>Travel Services</h3>
+                    <p>
+                        - Managing 2 Vinfast Limo Green electric vehicles <br>
+                        - Developing an online booking website to more easily connect with customers in need for the business.</p>
+                </div>
+                <div class="project">
+                    <h3>Design website and logo</h3>
+                    <p>
+                        - This portfolio website showcasing my work. <br>
+                        - Can design landing page for the business and personal use. <br>
+                        - Can design logo for the business and personal use. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Thinh Nguyen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
