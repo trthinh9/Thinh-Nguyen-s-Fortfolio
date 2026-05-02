@@ -632,6 +632,7 @@ footer {
         font-size: 2rem;
     }
 
+    .about-grid,
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
