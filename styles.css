@@ -536,6 +536,52 @@ footer {
         display: none;
     }
 
+    .cover-photo {
+        display: none;
+    }
+
+    .profile-card {
+        margin: 1rem auto 2rem;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .avatar {
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+
+    .profile-info p {
+        font-size: 0.95rem;
+    }
+
+    .profile-meta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-meta span,
+    .profile-details div {
+        font-size: 0.95rem;
+    }
+
+    .profile-details {
+        text-align: left;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
     nav.main-nav {
         position: fixed;
         left: 0;
