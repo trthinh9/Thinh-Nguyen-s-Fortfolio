@@ -183,6 +183,22 @@ section h2 {
     font-size: 0.95rem;
 }
 
+.profile-details {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.profile-details div {
+    line-height: 1.6;
+}
+
+.profile-details strong {
+    color: #333;
+}
+
 .about-content {
     margin-top: 6rem;
     padding-bottom: 4rem;
@@ -198,6 +214,69 @@ section h2 {
     color: #555;
     font-size: 1.05rem;
     line-height: 1.8;
+}
+
+.detail-section {
+    padding: 4rem 0;
+}
+
+.detail-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.detail-card {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+.certificate-detail {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.certificate-image {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.certificate-image img {
+    width: 100%;
+    display: block;
+}
+
+.certificate-info {
+    display: grid;
+    gap: 1rem;
+}
+
+.detail-box {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 1.75rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.detail-box h3 {
+    margin-bottom: 0.85rem;
+}
+
+.detail-box p,
+.detail-box ul {
+    color: #555;
+    line-height: 1.8;
+}
+
+.detail-box ul {
+    list-style: disc inside;
 }
 
 .about-grid {
@@ -223,6 +302,68 @@ section h2 {
     list-style: disc inside;
     color: #555;
     line-height: 1.8;
+}
+
+.qualifications-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.qualification-item {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.qualification-item h4 {
+    margin-bottom: 0.65rem;
+}
+
+.qualification-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.cert-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cert-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    padding: 1rem 1.3rem;
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-align: center;
+}
+
+.cert-button span {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cert-button small {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.cert-button:hover {
+    transform: translateY(-2px);
+    border-color: #999;
+    box-shadow: 0 14px 24px rgba(0,0,0,0.08);
 }
 
 .info-section {
@@ -261,6 +402,12 @@ section h2 {
     padding: 1.75rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     transition: transform 0.3s;
+}
+
+.projects-summary a.project-summary {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-summary:hover {
@@ -377,18 +524,68 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
+    header {
+        position: static;
+    }
+
+    body {
+        padding-bottom: 80px;
+    }
+
+    .logo {
         display: none;
     }
-    
+
+    nav.main-nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: #333;
+        justify-content: center;
+        padding: 0;
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    nav.main-nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0.6rem 0;
+        margin: 0;
+        background: transparent;
+        position: static;
+        flex-direction: row;
+    }
+
+    nav.main-nav ul li {
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    nav.main-nav ul li a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.75rem 0.5rem;
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    nav.main-nav ul li a:hover {
+        background-color: #444;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     section h2 {
         font-size: 2rem;
     }
-    
+
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
