@@ -39,6 +39,8 @@ nav {
     font-size: 1.5rem;
     padding-left: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
+    color: inherit;
 }
 
 nav ul {
@@ -106,11 +108,172 @@ section h2 {
 }
 
 /* About Section */
-#about p {
+.profile-banner {
+    position: relative;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.cover-photo {
+    height: 650px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card {
+    position: relative;
+    margin: -100px auto 0;
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+    background-color: #fff;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
+}
+
+.profile-info p {
+    margin-bottom: 1rem;
+    color: #5a5a5a;
+    font-size: 1rem;
+}
+
+.profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.profile-meta span {
+    background-color: #f4f6ff;
+    color: #333;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+}
+
+.about-content {
+    margin-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.about-summary {
     text-align: center;
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.about-summary p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.about-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.about-card ul {
+    list-style: disc inside;
+    color: #555;
+    line-height: 1.8;
+}
+
+.info-section {
+    margin-bottom: 2.5rem;
+}
+
+.info-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.skills-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-badge {
+    background-color: #eef2ff;
+    color: #333;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+}
+
+.projects-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-summary {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 1.75rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.project-summary:hover {
+    transform: translateY(-4px);
+}
+
+.project-summary h4 {
+    margin-bottom: 0.9rem;
+}
+
+.project-summary p {
+    color: #555;
+    line-height: 1.75;
 }
 
 /* Skills Section */
@@ -149,10 +312,14 @@ section h2 {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .project:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .project h3 {
@@ -161,20 +328,34 @@ section h2 {
 }
 
 /* Contact Section */
-form {
-    max-width: 600px;
-    margin: 0 auto;
+.social-links {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-form input,
-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.social-link i {
+    font-size: 1.2rem;
 }
 
 form textarea {
